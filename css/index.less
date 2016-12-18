@@ -1,0 +1,127 @@
+
+//设置视口，在640以上为640，以下为100%
+@media screen and (max-width: 1500px) and (min-width: 640px){
+  .container{
+    width: 640px;
+    padding: 0;
+    margin: 0 auto;
+
+  }
+}
+@media screen and (max-width: 640px)and (min-width: 100px){
+  .container{
+    width: 100%;
+    padding: 0;
+  }
+}
+
+//bootstrap 默认属性修改
+@h: 100%;
+
+.row{
+  margin: 0;
+}
+
+//头部开始
+.head{
+  width: @h;
+  height: 60px;
+  z-index: 999;
+  background-color: #E64239;
+  .hleft,.hmdl,.hright{
+    height: @h;
+  }
+  .hleft{
+    a{
+      position: absolute;
+      left: 10px;
+      top: 15px;
+      width: 30px;
+      height: 31px;
+      background: url("../images/back_06.png");
+    }
+  }
+  .hmdl{
+    input{
+      height: 44px;
+      color: white;
+      margin-bottom: 15px;
+      background-color: #E64239;
+      text-align: center;
+      width: @h;
+      border-bottom:1px solid white;
+    }
+    input::-webkit-input-placeholder{
+      color: white;
+    }
+  }
+  .hright{
+    a{
+      position: absolute;
+      right: 10px;
+      top: 15px;
+      width: 30px;
+      height: 30px;
+      background: url("../images/select_09.png");
+    }
+  }
+}
+
+//banner开始
+.banner{
+  .item{
+    img{
+      width: @h;
+    }
+  }
+}
+//产品开始
+.product{
+  text-align: center;
+  .pTab{
+    height: 60px;
+    a{
+      display: block;
+      width: 43px;
+      height: 43px;
+      margin: 15px auto 10px;
+      background: url("../images/nav_19.png");
+    }
+  }
+
+}
+//精品部分
+.jinping{
+  margin-top: 20px;
+  h3{
+    padding-left: 40px;
+    color: #D85E59;
+    font-size: 20px;
+  }
+
+  .jinTab{
+    box-sizing: border-box;
+    padding-top: 10px;
+    div{
+      padding: 0;
+    }
+    img{
+      width: @h;
+    }
+  }
+}
+//底部部分
+.bottom{
+  margin-top: 10px;
+  height: 60px;
+  box-shadow: 0 -2px 2px 2px  #EBEBEB;
+  .bTab{
+    a{
+      display: block;
+      margin: 20px auto;
+      width: 12px;
+      height: 10px;
+      background: url("../images/footnav_26.png");
+    }
+  }
+}
